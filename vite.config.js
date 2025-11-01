@@ -12,10 +12,20 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
+        manualChunks: (id) => {
           // Split React into its own chunk
-          'react-vendor': ['react', 'react-dom'],
+          if (id.includes('node_modules/react') || id.includes('node_modules/react-dom')) {
+            return 'react-vendor';
+          }
+          // Split other node_modules into vendor chunk
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
         },
+        // Optimize chunk file names
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]',
       },
     },
     // Enable minification
@@ -27,6 +37,8 @@ export default defineConfig({
     cssCodeSplit: true,
     // Generate source maps only for production debugging (optional)
     sourcemap: false,
+    // Reduce chunk size
+    chunkSizeWarningLimit: 600,
   },
   // Optimize dependencies
   optimizeDeps: {
