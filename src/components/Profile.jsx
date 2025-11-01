@@ -2,11 +2,13 @@ import MainNav from "./MainNav";
 
 const Profile = ({ onNavigate }) => {
   // Image assets from Figma
-  const img = "http://localhost:3845/assets/a3343414da7c610ebcf3fdf6c729be0f4bc3143a.svg";
-  const img1 = "http://localhost:3845/assets/dd6a673a37312e12b6c5aa4cb631f1a160decf6a.svg";
-  const img2 = "http://localhost:3845/assets/ad0b669d36a09e4b421d311a23cee7a2f1f16740.svg";
-  const imgFrame4 = "http://localhost:3845/assets/274e309280471d2f982bf16b729aadeb0bd16c37.svg";
-  const imgVector4 = "http://localhost:3845/assets/cd161e8ab52b02364fd9668fa020a93b867a0f93.svg";
+  // TODO: Replace with hosted URLs or move to public folder
+  // Using empty strings to prevent localhost network access requests
+  const img = "";
+  const img1 = "";
+  const img2 = "";
+  const imgFrame4 = "";
+  const imgVector4 = "";
 
   return (
     <div className="bg-white box-border flex flex-col items-center px-0 py-[50px] relative min-h-screen w-full">
@@ -26,39 +28,49 @@ const Profile = ({ onNavigate }) => {
                 <div className="absolute border-4 border-black border-solid bottom-[69.61%] left-0 right-[80.8%] top-[17.53%]" />
                 <div className="absolute border-4 border-black border-solid bottom-[56.11%] left-[80.8%] right-0 top-[31.03%]" />
                 <div className="absolute border-4 border-black border-solid bottom-0 left-[25.52%] right-[55.27%] top-[87.14%]" />
-                <div className="absolute inset-[23.14%_24.91%_33.61%_19.55%]">
-                  <div className="absolute bottom-[3.85%] left-[2.41%] right-0 top-[-19.17%]">
-                    <img alt="" className="block max-w-none size-full" src={img} />
+                {img && (
+                  <div className="absolute inset-[23.14%_24.91%_33.61%_19.55%]">
+                    <div className="absolute bottom-[3.85%] left-[2.41%] right-0 top-[-19.17%]">
+                      <img alt="" className="block max-w-none size-full" src={img} />
+                    </div>
                   </div>
-                </div>
-                <div className="absolute inset-[28.4%_10.21%_28.99%_32.79%]">
-                  <div className="absolute inset-[2.02%_-13.41%_-1.28%_-0.75%]">
-                    <img alt="" className="block max-w-none size-full" src={img1} />
+                )}
+                {img1 && (
+                  <div className="absolute inset-[28.4%_10.21%_28.99%_32.79%]">
+                    <div className="absolute inset-[2.02%_-13.41%_-1.28%_-0.75%]">
+                      <img alt="" className="block max-w-none size-full" src={img1} />
+                    </div>
                   </div>
-                </div>
-                <div className="absolute inset-[34.83%_28.29%_18.12%_8.66%]">
-                  <div className="absolute inset-[-2.48%_2.95%_-2.48%_0.46%]">
-                    <img alt="" className="block max-w-none size-full" src={img2} />
+                )}
+                {img2 && (
+                  <div className="absolute inset-[34.83%_28.29%_18.12%_8.66%]">
+                    <div className="absolute inset-[-2.48%_2.95%_-2.48%_0.46%]">
+                      <img alt="" className="block max-w-none size-full" src={img2} />
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
               <p className="font-black leading-[70px] relative shrink-0 text-[54px] text-black text-center">
                 into this
               </p>
-              <div className="h-[15px] relative shrink-0 w-[261px]">
-                <div className="absolute inset-[-48.19%_-0.58%_-48.19%_-0.89%]">
-                  <img alt="" className="block max-w-none size-full" src={imgFrame4} />
+              {imgFrame4 && (
+                <div className="h-[15px] relative shrink-0 w-[261px]">
+                  <div className="absolute inset-[-48.19%_-0.58%_-48.19%_-0.89%]">
+                    <img alt="" className="block max-w-none size-full" src={imgFrame4} />
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
           {/* Description Section */}
           <div className="h-[330px] relative shrink-0 w-full">
           
             <div className=" font-normal max-w-[700px] m-auto">
-            <div className="w-10">
+            {imgVector4 && (
+              <div className="w-10">
                 <img alt="" className="block max-w-none size-full rotate-90 mb-6 -ml-5" src={imgVector4} />
               </div>
+            )}
               <p className="mb-0">
                 I've designed for everything from fast-moving startups to global enterprises across industries like entertainment, performance testing, and cybersecurity. Whether leading large-scale design initiatives or collaborating closely with cross-functional teams, I focus on shaping products that balance user needs with business goals.
               </p>

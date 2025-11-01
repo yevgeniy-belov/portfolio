@@ -10,7 +10,9 @@ import showcasesData from "../showcases-anotations.json";
 function App() {
   const [currentPage, setCurrentPage] = useState("Profile");
   const [selectedCompanyName, setSelectedCompanyName] = useState("Check Point");
-  const checkPointLogo = "http://localhost:3845/assets/dc277f15e0f5779e02e5f0b2c17f5452db2535ae.png";
+  // TODO: Replace with hosted URL or move to public folder
+  // Using null to prevent localhost network access requests
+  const checkPointLogo = null;
 
   // Find the selected company data
   const selectedCompany = showcasesData.find(company => company.name === selectedCompanyName) || showcasesData[0];
