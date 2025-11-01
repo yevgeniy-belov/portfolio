@@ -1,0 +1,84 @@
+# React + Vite + Tailwind CSS Project Rules
+
+## Code Style
+- Use functional components with hooks
+- Prefer named exports for components
+- Use arrow functions for component definitions
+- Keep components small and focused on a single responsibility
+- Use meaningful variable and function names
+
+## React Best Practices
+- Use React 19 features and patterns
+- Prefer `const` over `let`, avoid `var`
+- Use destructuring for props and state
+- Extract complex logic into custom hooks
+- Use proper key props for lists
+- Avoid inline object/function creation in render methods when possible
+
+## JSX Guidelines
+- Use self-closing tags when appropriate (`<div />` instead of `<div></div>`)
+- Use semantic HTML elements
+- Use className instead of class
+- Keep JSX readable with proper indentation
+
+## Tailwind CSS
+- Use Tailwind utility classes directly in JSX
+- Prefer Tailwind v4 syntax (`@import "tailwindcss"`)
+- Use responsive variants when needed (sm:, md:, lg:, xl:, 2xl:)
+- Extract repeated utility combinations into components or use @apply sparingly
+- Use Tailwind's spacing, color, and typography scales
+
+## File Organization
+- Keep components in appropriate directories
+- Use PascalCase for component file names
+- Group related components together
+- Keep utility functions separate from components
+
+## Imports
+- Group imports: external libraries first, then internal modules
+- Use absolute imports when configured (avoid relative paths like `../../../`)
+- Remove unused imports
+
+## Performance
+- Use React.memo() for components that re-render frequently
+- Lazy load routes when appropriate
+- Optimize images and assets
+- Use useMemo and useCallback when needed, but not prematurely
+
+## Error Handling
+- Use error boundaries for error handling
+- Provide meaningful error messages
+- Handle loading and error states in components
+
+## TypeScript (if added later)
+- Use TypeScript for type safety
+- Define proper interfaces and types
+- Avoid `any` type when possible
+
+## Testing & Quality Assurance
+- **Always test the app after making changes** - Use browser automation tools (Cursor's browser MCP) to automatically verify functionality
+- **Test relevant places first** - Focus on the specific areas affected by the changes
+- **Test potentially related use cases** - Consider edge cases and related functionality that might be impacted
+- **Context-aware automated testing** (using browser automation): 
+  - If position/styling changed → test relevant scrolling behavior, layout responsiveness, overflow handling, and viewport resizing
+  - If component structure changed → test rendering, state updates, user interactions, and element visibility
+  - If data flow changed → test loading states, error handling, data updates, and network requests
+  - If navigation/routing changed → test all affected routes, navigation paths, and URL changes
+  - Use browser automation to navigate, interact with elements, take screenshots, and verify expected outcomes
+- Start the dev server (`npm run dev`) before running automated browser tests
+- Use browser snapshot and accessibility tools to verify UI state and interactions
+- Write automated tests for complex logic when appropriate
+- Use testing library best practices
+- Keep tests simple and focused
+
+## Accessibility
+- Use semantic HTML elements
+- Include proper ARIA labels when needed
+- Ensure keyboard navigation works
+- Maintain proper color contrast ratios
+
+## Git & Version Control
+- Write clear, descriptive commit messages
+- Keep commits focused and atomic
+- Don't commit node_modules or build artifacts
+
