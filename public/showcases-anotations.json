@@ -1,0 +1,951 @@
+[
+  {
+    "name": "Your company",
+    "summary": {
+      "role": [
+        "Senior Product Designer"
+      ],
+      "team": [
+        "Product Managers",
+        "UX Specialists",
+        "UX Reaseachers",
+        "Technical Writers",
+        "Developers"
+      ],
+      "timeline": "Future",
+      "context": [
+        "Leading UX and UI design of CloudGuard project",
+        "Maintaining Design Systems"
+      ],
+      "deliveries": [
+        "Low fidelity mockups",
+        "High fidelity UI designs",
+        "Prototypes",
+        "Icons system",
+        "Design System in Figma",
+        "Design System in code",
+        "Full product UI redesign",
+        "Redesigned UX of many modules"
+      ],
+      "impact": [
+        "Improved experience of many people using Check Points products",
+        "Made several legacy products shine again.",
+        "Improved UI and UX consistency across product modules",
+        "Made our sales people proud to show our product to the customers",
+        "Improved efficiency of design deliveries"
+      ]
+    },
+    "showcases": []
+  },
+  {
+    "name": "Check Point",
+    "summary": {
+      "role": [
+        "Senior Product Designer"
+      ],
+      "team": [
+        "Product Managers",
+        "UX Specialists",
+        "UX Reaseachers",
+        "Technical Writers",
+        "Developers"
+      ],
+      "timeline": "2021-Today",
+      "context": [
+        "Leading UX and UI design of CloudGuard project",
+        "Maintaining Design Systems"
+      ],
+      "deliveries": [
+        "Low fidelity mockups",
+        "High fidelity UI designs",
+        "Prototypes",
+        "Icons system",
+        "Design System in Figma",
+        "Design System in code",
+        "Full product UI redesign",
+        "Redesigned UX of many modules"
+      ],
+      "impact": [
+        "Improved experience of many people using Check Points products",
+        "Made several legacy products shine again.",
+        "Improved UI and UX consistency across product modules",
+        "Made our sales people proud to show our product to the customers",
+        "Improved efficiency of design deliveries"
+      ]
+    },
+    "showcases": [
+      {
+        "company": "Check Point",
+        "title": "Design System",
+        "caption": "",
+        "description": "A design system in code",
+        "client": "Check Point",
+        "role": [
+          "Creator",
+          "Product Designer (System Lead)",
+          "Developer"
+        ],
+        "team": [
+          "Myself",
+          "Front End team"
+        ],
+        "timeline": "3 years",
+        "context": "CloudGuard suffered from inconsistency everywhere; Existing system missed functionality and scalability.",
+        "deliveries": [
+          "Architected and built a code-based design system directly in React and Tailwind",
+          "Developed reusable components with tokens (colors, typography, spacing, icons) to guarantee consistency.",
+          "Enabled designers and engineers to collaborate on a shared source of truth.",
+          "Championed responsiveness at the system level.",
+          "Partnered with developers to ensure production-ready components and smooth adoption.",
+          "Streamlined icons management and deployment",
+          "Incorporated third-party components for better quality and efficiency"
+        ],
+        "impact": [
+          "Brought visual consistency across large parts of the product",
+          "Established a single source of truth for design and development, reducing duplication and misalignment.",
+          "Improved collaboration: designers and engineers could speak the same language and reuse the same building blocks.",
+          "Drastically reduced time spent by the FE team on components maintenance"
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "Check Point",
+        "title": "Color System",
+        "caption": "",
+        "description": "A flexible and potent color system",
+        "client": "Check Point",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself"
+        ],
+        "timeline": "2 months",
+        "context": "The product had grown over many years, accumulating inconsistent and outdated color usage across its interface. Many colors were unrelated, redundant, or inaccessible, making maintenance difficult and harming visual coherence.The goal was to create a unified, flexible color system that could replace legacy colors, ensure accessibility, and provide a clear, scalable foundation for future design work.",
+        "deliveries": [
+          "Conducted a comprehensive audit of all colors used across the product to identify duplicates, inconsistencies, and accessibility issues.",
+          "Designed a new structured color system built around semantic tokens (e.g., primary, success, warning, neutral).",
+          "Defined contrast-safe color scales supporting accessibility standards and visual hierarchy.",
+          "Replaced legacy hard-coded colors with centralized tokens ready for implementation in design and code.",
+          "Documented the system in Figma and developer guidelines to ensure easy adoption and long-term maintenance."
+        ],
+        "impact": [
+          "Eliminated hundreds of redundant or outdated colors, significantly simplifying visual management.",
+          "Improved accessibility and readability, ensuring compliance with contrast standards.",
+          "Unified design and engineering teams around a single, maintainable color source.",
+          "Strengthened the overall visual consistency and professionalism of the product’s interface."
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "Check Point",
+        "title": "Blueberry",
+        "caption": "Internal prototyping tool built on production components and tokens.",
+        "description": "Internal prototyping tool that uses same Design System and components as production",
+        "client": "Check Point",
+        "role": [
+          "Creator",
+          "Product Designer",
+          "Developer"
+        ],
+        "team": [
+          "Myself"
+        ],
+        "timeline": "5 months",
+        "context": "Design teams often struggle to create realistic prototypes that matched the production environment. Traditional tools required rebuilding components visually, which caused visual drift and wasted time. To solve this, I created Blueberry — an internal prototyping tool built directly on top of the production design system, ensuring pixel-perfect accuracy and real interaction behavior.",
+        "deliveries": [
+          "Designed and developed an interactive prototyping tool that uses live production components.",
+          "Implemented the same design tokens, theming, and logic as in the production system.",
+          "Created hundreds prototypes and several POCs."
+        ],
+        "impact": [
+          "Enabled designers to prototype in a real environment, reducing design-to-dev friction.",
+          "Ensured 1:1 visual and behavioral consistency between prototypes and shipped features.",
+          "Shortened iteration cycles by removing the need to rebuild components for mockups.",
+          "Improved communication and alignment between design and engineering teams.",
+          "Strengthened adoption of the shared design system by demonstrating its flexibility and power."
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "Check Point",
+        "title": "Main Dashboard",
+        "caption": "",
+        "description": "A POC of main dashboard",
+        "client": "Check Point",
+        "role": [
+          "UI Designer"
+        ],
+        "team": [
+          "Myself",
+          "Chief Strategy Officer"
+        ],
+        "timeline": "5 months",
+        "context": "CloudGuard’s leadership needed a clear, high-level visualization of risk posture and prevention performance across the product ecosystem.Existing dashboards were fragmented and too detailed, making it difficult for executives to understand trends or communicate impact.The goal was to create a proof of concept for a unified main dashboard — one that simplifies complex data into a clear, actionable story for both technical and strategic stakeholders.",
+        "deliveries": [
+          "Designed a high-fidelity proof of concept for the CloudGuard main dashboard.",
+          "Developed visual models for risk, prevention, and asset health metrics.",
+          "Introduced data visualization patterns for performance trends and alerts.",
+          "Defined layout, hierarchy, and visual language for executive-level clarity.",
+          "Collaborated closely with the Chief Strategy Officer to align design with business insights and messaging."
+        ],
+        "impact": [
+          "Helped leadership visualize product value at a glance, enabling clearer communication with customers and partners.",
+          "Simplified complex risk data into an intuitive, narrative-driven dashboard."
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "Check Point",
+        "title": "Compliance Module",
+        "caption": "",
+        "description": "A redesign of Compliance “Blade” of SmartConsole",
+        "client": "Check Point",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself",
+          "Head of UX of Check Point",
+          "PM",
+          "Marketing TL"
+        ],
+        "timeline": "4 months",
+        "context": "It want updated for long time; UX was poor; Performance poor;",
+        "deliveries": [
+          "Prototype of existing design",
+          "Research: Personas, Competition,",
+          "Support tickets analysis",
+          "UX heuristics,",
+          "Gathered feedback from the team on the field (marketing)",
+          "Drastically simplified flows",
+          "Prototypes",
+          "High fidelity designs"
+        ],
+        "impact": [
+          "Significantly improved usability and clarity of the compliance interface, validated through user testing and feedback.",
+          "Reduced task complexity by simplifying multi-step workflows into more intuitive interactions.",
+          "Helped users quickly identify compliance issues and priorities, improving efficiency for security and audit teams.",
+          "Strengthened the product’s competitive positioning through a modernized, performance-optimized design.",
+          "Enhanced internal cross-team alignment by connecting UX, PM, and marketing insights into a unified redesign."
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "Check Point",
+        "title": "GSL Builder",
+        "caption": "",
+        "description": "A redesign of GSL builder",
+        "client": "Check Point",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [],
+        "timeline": "1 month",
+        "context": "As part of overall UI redesign of CloudGuard the PM decided to improve UX of long time not updated module of GSL builder.",
+        "deliveries": [
+          "Research: Personas",
+          "Support tickets analysis",
+          "Gathered feedback from the team on the field (marketing)",
+          "User interviews",
+          "Syntax highlighted queries",
+          "Improved test results section",
+          "High fidelity designs"
+        ],
+        "impact": [
+          "Provided a validated design direction for improving the GSL Builder experience.",
+          "Helped the team define requirements and priorities for implementation.",
+          "Clarified complex user workflows, reducing ambiguity for engineering.",
+          "Aligned stakeholders around a modernized vision for the module’s future evolution.",
+          "Served as a prototype reference for ongoing CloudGuard redesign efforts."
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "Check Point",
+        "title": "Main Menu redesign",
+        "caption": "",
+        "description": "A redesign of CloudGuard’s main menu",
+        "client": "Check Point",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself",
+          "VP Product of CloudGuard"
+        ],
+        "timeline": "2 weeks",
+        "context": "The existing CloudGuard main menu was cluttered and consumed excessive screen space. Navigation was inconsistent across modules, making it difficult for users to orient themselves and quickly reach key areas of the platform.",
+        "deliveries": [
+          "Conducted competitive audits to gather navigation design references.",
+          "Created interactive prototypes exploring layout and hierarchy options.",
+          "Delivered high-fidelity, production-ready designs aligned with the updated design system.",
+          "Collaborated with the VP of Product to refine hierarchy and terminology."
+        ],
+        "impact": [
+          "Improved navigation efficiency and screen real estate usage.",
+          "Increased consistency and discoverability across modules.",
+          "Positive feedback from users and internal teams on clarity and usability."
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "Check Point",
+        "title": "Team Logo",
+        "caption": "",
+        "description": "A logo for the platform team of CloudGuard",
+        "client": "Check Point",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself"
+        ],
+        "timeline": "1 week",
+        "context": "The new group lead wanted to strengthen team identity and morale while signaling a positive cultural shift to the wider organization. The logo was intended to represent the Platform team’s role as the foundation of CloudGuard’s product ecosystem.",
+        "deliveries": [
+          "Explored multiple visual directions aligned with team values• Created a final logo concept reflecting stability and energy• Designed presentation and swag assets to support internal launch"
+        ],
+        "impact": [
+          "The logo was proudly adopted by the team and featured in internal presentations and communications • Helped create a stronger sense of ownership and visibility within the organization"
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "Check Point",
+        "title": "Full UI redesign",
+        "caption": "",
+        "description": "A full redesign of CloudGuard’s user interface",
+        "client": "Check Point",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself",
+          "junior Product Designer",
+          "FrontEnd Architect"
+        ],
+        "timeline": "1 year",
+        "context": "CloudGuard’s interface had become visually outdated and inconsistent across modules. Screens were cluttered, color usage lacked hierarchy, and icons varied between screens. The redesign aimed to modernize the UI, align it with the new design system, and improve overall usability and brand perception.",
+        "deliveries": [
+          "Conducted competitive benchmarking and visual audits• Defined visual direction aligned with company rebranding• Built a scalable design system in Figma• Produced high-fidelity screens and interaction specifications for implementation"
+        ],
+        "impact": [
+          "Unified UI across all CloudGuard modules, improving visual consistency and clarity",
+          "Reduced visual complexity and improved user task completion through cleaner layouts and better hierarchy",
+          "Provided a solid visual and structural foundation for future product scalability"
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "Check Point",
+        "title": "Icons System",
+        "caption": "",
+        "description": "Part of the Design System in Figma — a flexible and scalable icon framework for CloudGuard",
+        "client": "Check Point",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself",
+          "junior Product Designer"
+        ],
+        "timeline": "1 week",
+        "context": "As part of Check Point’s visual redesign, CloudGuard’s iconography needed a full overhaul. Existing icons were inconsistent in style. The goal was to establish a unified, maintainable system aligned with the new brand direction.",
+        "deliveries": [
+          "Redesigned the entire icon library in a consistent line (stroke) style",
+          "Implemented a build method (in Figma and code) that enables dynamic icon weight adjustments similar to font weights",
+          "Defined a scalable system of icon sizes and weights"
+        ],
+        "impact": [
+          "Unified iconography across all CloudGuard modules and Check Point’s design ecosystem",
+          "Reduced visual noise and improved UI consistency across multiple teams and products"
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "Check Point",
+        "title": "Automated Actions",
+        "caption": "",
+        "description": "Design of the Automated Actions flow for CloudGuard, enabling users to define and manage automatic responses to specific security events.",
+        "client": "Check Point",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself",
+          "junior Product Designer",
+          "PM"
+        ],
+        "timeline": "3 weeks",
+        "context": "As part of introducing a new mechanism for detecting and alerting on “toxic combinations” (risky security configurations), there was a need to design a clear and flexible flow that would let users automate responses and control notification rules — ensuring alerts remain meaningful and actionable rather than overwhelming.",
+        "deliveries": [
+          "Gathered design references and explored automation patterns from similar enterprise products",
+          "Defined user flows and logic for filtering and triggering automated actions",
+          "Designed high-fidelity mockups for configuration and test result views"
+        ],
+        "impact": [
+          "Enabled the successful rollout of a new “Toxic Combinations” alerting feature with clear and actionable automation options",
+          "Helped users gain confidence and control over alerting behavior by reducing noise and emphasizing relevance",
+          "Strengthened CloudGuard’s position as a proactive, automation-driven security platform"
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "Check Point",
+        "title": "Entity Details redesign",
+        "caption": "",
+        "description": "Redesign of the entity details view to improve usability and clarity",
+        "client": "Check Point",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself",
+          "junior Product Designer",
+          "PM",
+          "Frontend Architect"
+        ],
+        "timeline": "3 months",
+        "context": "As part of the larger CloudGuard UI redesign, the entity details view required special attention. The previous design was cluttered and inconsistent, with poor information hierarchy, confusing labels, and uneven behavior across entity types. Users struggled to locate key information quickly, reducing efficiency and confidence in the tool.",
+        "deliveries": [
+          "Gathered visual and structural references",
+          "Designed new wireframes for all entity types, adapting layouts for specific data structures",
+          "Defined information hierarchy and labeling standards",
+          "Created high-fidelity designs aligned with the new UI system"
+        ],
+        "impact": [
+          "Simplified and unified the entity details experience across modules",
+          "Reduced user confusion and cognitive load by improving data grouping and labeling",
+          "Provided a scalable framework for future entity types"
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "Check Point",
+        "title": "Event Graph",
+        "caption": "",
+        "description": "A redesign of the main visualization in the Event Details view — showing how assets and events are connected in a clear, interactive graph.",
+        "client": "Check Point",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself",
+          "PM"
+        ],
+        "timeline": "3 months",
+        "context": "Security analysts needed a more intuitive way to visualize how an event propagated through affected assets and related components. The previous representation was flat and text-heavy, making it difficult to understand relationships between entities and the overall attack flow.",
+        "deliveries": [
+          "Conducted research into visualization patterns for complex relationships",
+          "Defined visual hierarchy and interaction model for event-to-asset mapping",
+          "Created high-fidelity designs aligned with the new CloudGuard UI system"
+        ],
+        "impact": [
+          "Enabled analysts to understand event context at a glance",
+          "Reduced time to investigate incidents by presenting relationships visually",
+          "Provided a scalable foundation for other graph-based visualizations in CloudGuard"
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "Check Point",
+        "title": "Entity Viewer redesign",
+        "caption": "",
+        "description": "A proof of concept for redesigning the Entity Viewer UX to make complex data structures more understandable and accessible.",
+        "client": "Check Point",
+        "role": [
+          "Product Designer",
+          "Developer"
+        ],
+        "team": [
+          "Myself"
+        ],
+        "timeline": "1 week",
+        "context": "The existing Entity Viewer was highly technical and text-heavy, catering mainly to users with deep R&D backgrounds. The goal was to make entity data easier to explore for a broader audience by improving hierarchy, visual grouping, and discoverability — while maintaining accuracy for advanced users.",
+        "deliveries": [
+          "Conducted UX research to identify usability barriers in the current viewer",
+          "Designed and implemented a high-fidelity interactive prototype directly in code",
+          "Reused production components to ensure design feasibility and performance parity"
+        ],
+        "impact": [
+          "Validated a more approachable way to explore complex data structures",
+          "Helped align stakeholders on the need to simplify the Entity Viewer experience",
+          "Served as a reference for future UI and UX directions within the platform"
+        ],
+        "images": [],
+        "tags": []
+      }
+    ]
+  },
+  {
+    "name": "HP Software",
+    "summary": {
+      "role": [
+        "Senior Product Designer"
+      ],
+      "team": [
+        "Product Managers",
+        "UX Specialists",
+        "UX Reaseachers",
+        "Technical Writers",
+        "Developers"
+      ],
+      "timeline": "2011-2021",
+      "context": [
+        "Leading UX and UI design of CloudGuard project",
+        "Maintaining Design Systems"
+      ],
+      "deliveries": [
+        "Low fidelity mockups",
+        "High fidelity UI designs",
+        "Prototypes",
+        "Icons system",
+        "Design System in Figma",
+        "Design System in code",
+        "Full product UI redesign",
+        "Redesigned UX of many modules"
+      ],
+      "impact": [
+        "Improved experience of many people using Check Points products",
+        "Made several legacy products shine again.",
+        "Improved UI and UX consistency across product modules",
+        "Made our sales people proud to show our product to the customers",
+        "Improved efficiency of design deliveries"
+      ]
+    },
+    "showcases": [
+      {
+        "company": "HP Software",
+        "title": "Stylebox",
+        "caption": "",
+        "description": "A design system in code",
+        "client": "HPE / Micro Focus",
+        "role": [
+          "Creator",
+          "product Designer (System Lead)",
+          "Developer"
+        ],
+        "team": [
+          "Myself",
+          "Developers"
+        ],
+        "timeline": "",
+        "context": "",
+        "deliveries": [
+          "Architected and built a code-based design system directly in Angular, ensuring 1:1 parity between design and implementation.",
+          "Developed reusable components with tokens (colors, typography, spacing) to guarantee consistency.",
+          "Enabled designers and engineers to collaborate on a shared source of truth.",
+          "Championed accessibility and responsiveness at the system level.",
+          "Partnered with developers to ensure production-ready components and smooth adoption."
+        ],
+        "impact": [
+          "Enabled faster rebranding: StormRunner was rebranded in just a few weeks.",
+          "Allowed multiple product teams to update branding and themes with minimal design or engineering effort.",
+          "Brought visual consistency across a product suite.",
+          "Established a single source of truth for design and development, reducing duplication and misalignment.",
+          "Introduced dark theme at the system level, making it available across all products instantly.",
+          "Improved collaboration: designers and engineers could speak the same language and reuse the same building blocks.",
+          "Future-proofed the product ecosystem by creating a scalable foundation for ongoing evolution."
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "HP Software",
+        "title": "StormRunner Logo",
+        "caption": "",
+        "description": "A logo for StormRunner ",
+        "client": "HPE / Micro Focus",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself"
+        ],
+        "timeline": "3 weeks",
+        "context": "I was asked to create a logo that will be used in UI, presentations and other materials.",
+        "deliveries": [
+          "Logo design",
+          "T-shirt design",
+          "Wallpapers"
+        ],
+        "impact": [
+          "Strengthened team identity and pride by creating visual assets (logo, T-shirts, wallpapers) that were embraced internally.",
+          "Contributed to a sense of ownership and cohesion for the StormRunner team."
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "HP Software",
+        "title": "Analysis redesign",
+        "caption": "",
+        "description": "Redesign of StormRunner’s Analysis capabilities",
+        "client": "HPE",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [],
+        "timeline": "2 years",
+        "context": "HPE decided to make the product better suited for professional performance engineers and and more flexibility and functionality which required a reimagining the module.",
+        "deliveries": [
+          "Collaborated with PM to redefine the analysis module workflow to better match professional performance engineers’ needs.",
+          "Designed new visualizations and interaction patterns for comparing large sets of performance data.",
+          "Improved information hierarchy and layout to make complex insights easier to read at a glance.",
+          "Created high-fidelity prototypes to validate design decisions with stakeholders and users."
+        ],
+        "impact": [
+          "Delivered a more flexible and powerful analysis experience, enabling advanced users to perform deeper investigations.",
+          "Improved clarity and usability of complex data visualizations, reducing user confusion.",
+          "Helped reposition the product as a tool fit for professional-level performance engineering.",
+          "Contributed to stronger adoption and satisfaction among expert users by aligning design with their workflows."
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "HP Software",
+        "title": "Animated Gifs",
+        "caption": "",
+        "description": "Short videos showcasing new features",
+        "client": "HPE / Micro Focus",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself",
+          "PMs"
+        ],
+        "timeline": "8 months",
+        "context": "The product team needed a way to communicate new features quickly and effectively both inside the product and through external channels. Traditional documentation was too static and time-consuming to read. To address this, I designed short, animated gifs that showcased new features in action, making them easier to understand for users, stakeholders, and marketing teams.",
+        "deliveries": [
+          "Short, animated gifs showcasing new features each. 3-5 per version."
+        ],
+        "impact": [
+          "Provided a clear, visual explanation of new features, reducing the need for lengthy documentation.",
+          "Improved user onboarding and feature adoption by making updates easier to discover and understand.",
+          "Supported marketing and social media campaigns with engaging, lightweight content.",
+          "Increased team efficiency by reusing gifs across product, help center, and external materials.",
+          "Strengthened the product’s ability to communicate value quickly to both technical and non-technical audiences."
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "HP Software",
+        "title": "Flow Recorder",
+        "caption": "",
+        "description": "Internal tool for generating video walkthroughs",
+        "client": "HPE / Micro Focus",
+        "role": [
+          "Creator",
+          "Product Designer",
+          "Developer"
+        ],
+        "team": [
+          "Myself"
+        ],
+        "timeline": "2 years",
+        "context": "After almost a year of manually creating animated gifs for presenting new features, I decided to create a tool that will do it automatically.",
+        "deliveries": [
+          "A successful POC",
+          "A tool that takes a script as input and generate videos of flows in any format including animated gifs."
+        ],
+        "impact": [
+          "Eliminated the need for manual gif creation, saving hours of repetitive work for product team.",
+          "Provided a scalable way to generate walkthroughs for presentations, documentation, and social media.",
+          "Improved consistency and quality of animated gifs."
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "HP Software",
+        "title": "Icons Library",
+        "caption": "",
+        "description": "A library of StormRunner icons",
+        "client": "HPE / Micro Focus",
+        "role": [
+          "Creator",
+          "Product Designer",
+          "Developer"
+        ],
+        "team": [
+          "Myself",
+          "Project Manager"
+        ],
+        "timeline": "3 weeks",
+        "context": "Product teams weren’t aware of all icons different projects used. Developers struggled to find the right icon.",
+        "deliveries": [
+          "An icons library with intuitive design and semantic search."
+        ],
+        "impact": [
+          "Made it easier for developers to quickly find the right icon, reducing friction and wasted time.",
+          "Established a scalable library that supported future growth and ensured visual alignment across products.",
+          "Increased collaboration efficiency between designers and developers by creating a shared reference."
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "HP Software",
+        "title": "T-shirts",
+        "caption": "",
+        "description": "Set of cool T-shirts",
+        "client": "HP / HPE",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself"
+        ],
+        "timeline": "3 weeks",
+        "context": "At times the group’s moral was a bit low so the product team looked for ways to bring it back.",
+        "deliveries": [
+          "Series of T-shirt designs"
+        ],
+        "impact": [
+          "The team absolutely loved them",
+          "Some team ex-members ware them even these todays"
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "HP Software",
+        "title": "Home Page",
+        "caption": "",
+        "description": "Redesign of the homepage",
+        "client": "HP / HPE ",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [],
+        "timeline": "3 weeks",
+        "context": "The original StormRunner home page provided limited visibility into recent activity and key actions. Users had difficulty understanding where to start and how to access their most-used assets.",
+        "deliveries": [
+          "A new home dashboard layout focused on clarity and task discoverability.",
+          "Redesigned Quick Start and Latest Runs sections for faster access to key actions and data.",
+          "Introduced “Get Tools” area and contextual tutorials, improving onboarding.",
+          "Applied updated visual language and interaction patterns aligned with the new design system."
+        ],
+        "impact": [
+          "The team absolutely loved them",
+          "Some team ex-members ware them even these todays"
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "HP Software",
+        "title": "Scheduling Settings",
+        "caption": "",
+        "description": "Visualization of scripts scheduling settings",
+        "client": "HP / HPE ",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself",
+          "UX",
+          "PM"
+        ],
+        "timeline": "3 weeks",
+        "context": "",
+        "deliveries": [],
+        "impact": [],
+        "images": [],
+        "tags": []
+      }
+    ]
+  },
+  {
+    "name": "Subber",
+    "summary": {
+      "role": [
+        "Senior Product Designer"
+      ],
+      "team": [
+        "Product Managers",
+        "UX Specialists",
+        "UX Reaseachers",
+        "Technical Writers",
+        "Developers"
+      ],
+      "timeline": "2008-2010",
+      "context": [
+        "Leading UX and UI design of CloudGuard project",
+        "Maintaining Design Systems"
+      ],
+      "deliveries": [
+        "Low fidelity mockups",
+        "High fidelity UI designs",
+        "Prototypes",
+        "Icons system",
+        "Design System in Figma",
+        "Design System in code",
+        "Full product UI redesign",
+        "Redesigned UX of many modules"
+      ],
+      "impact": [
+        "Improved experience of many people using Check Points products",
+        "Made several legacy products shine again.",
+        "Improved UI and UX consistency across product modules",
+        "Made our sales people proud to show our product to the customers",
+        "Improved efficiency of design deliveries"
+      ]
+    },
+    "showcases": [
+      {
+        "company": "Subber",
+        "title": "Subber Logo",
+        "caption": "",
+        "description": "Logo design for Subber Media, an online platform that allowed users to post and share subtitles for online videos.",
+        "client": "Subber Media",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself",
+          "PM"
+        ],
+        "timeline": "2 months",
+        "context": "The early-stage startup needed a recognizable logo for presentations, marketing materials, and product UI. The goal was to create a visual identity that reflected both video and subtitles in a clean, digital-friendly form.",
+        "deliveries": [
+          "Conducted research into industry visual language and color psychology",
+          "Presented several design directions with varying color palettes and typography",
+          "Designed a final logo concept inspired by a screen and subtitle layout"
+        ],
+        "impact": [
+          "The selected logo was adopted as the official brand identity",
+          "Used across product UI, pitch materials, and company presentations"
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "Subber",
+        "title": "Visit Card",
+        "caption": "",
+        "description": "Design of business cards for the founders of Subber Media, an early-stage platform for sharing and creating subtitles for online videos.",
+        "client": "Subber Media",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself"
+        ],
+        "timeline": "2 weeks",
+        "context": "The founders wanted a distinctive business card that would reflect their new visual identity and help make a strong first impression in meetings and events.",
+        "deliveries": [
+          "Conducted research into modern and minimal card materials and finishes",
+          "Designed multiple layout and typography options",
+          "Created a realistic visualization of the final printed card for approval before production"
+        ],
+        "impact": [
+          "The final design was used by the founders and became part of the company’s brand materials",
+          "The transparent card design generated strong positive reactions and helped the team stand out in networking events"
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "Subber",
+        "title": "Main layout",
+        "caption": "",
+        "description": "Design of the main editing layout for Subber’s video subtitle editor — defining how users interact with subtitles and video simultaneously.",
+        "client": "Subber Media",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself",
+          "Founders"
+        ],
+        "timeline": "2 years",
+        "context": "The challenge was to deliver rich editing functionality within a compact interface, ensuring the controls enhanced rather than obstructed the video playback experience.",
+        "deliveries": [
+          "Conducted research on user interaction patterns in video editing and subtitle creation environments",
+          "Explored and compared multiple layout directions and interaction models",
+          "Refined and finalized the selected “Above-Video” layout concept",
+          "Designed a transparent, context-aware interface that minimizes visual obstruction",
+          "Delivered a scalable, nonintrusive, and visually cohesive layout aligned with Subber’s product aesthetic"
+        ],
+        "impact": [
+          "The “Above-Video” layout introduced a scalable structure that enabled complex interactions without obstructing playback. It became the foundation for future layout decisions across the product."
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "Subber",
+        "title": "A Subtitle design",
+        "caption": "",
+        "description": "Design of the subtitle editor UI component, including all states, sizes, and interaction behaviors.",
+        "client": "Subber Media",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself",
+          "Founders"
+        ],
+        "timeline": "2 years",
+        "context": "The platform required a subtitle editing interface that could manage complex actions—creating, editing, syncing, sharing, and translating subtitles—while remaining visually clear and compact.",
+        "deliveries": [
+          "Conducted research on subtitle accessibility: color contrast, display time, and readability standards",
+          "Designed a modular subtitle system that balanced clarity and aesthetics",
+          "Developed a complete UI kit including all interaction states",
+          "Delivered interactive assets using Adobe Catalyst for integration with the Flash-based product"
+        ],
+        "impact": [
+          "Elevated the visual quality of the product by introducing a sleek, consistent subtitle design that communicated both precision and playfulness."
+        ],
+        "images": [],
+        "tags": []
+      },
+      {
+        "company": "Subber",
+        "title": "Subtitles Menu",
+        "caption": "",
+        "description": "Design of the subtitles menu",
+        "client": "Subber Media",
+        "role": [
+          "Product Designer"
+        ],
+        "team": [
+          "Myself",
+          "Founders"
+        ],
+        "timeline": "2 years",
+        "context": "The challenge was to deliver rich editing functionality within a compact interface, ensuring the controls enhanced rather than obstructed the video playback experience.",
+        "deliveries": [
+          "Conducted research on user interaction patterns in video editing and subtitle creation environments",
+          "Explored and compared multiple layout directions and interaction models",
+          "Refined and finalized the selected “Above-Video” layout concept",
+          "Designed a transparent, context-aware interface that minimizes visual obstruction",
+          "Delivered a scalable, nonintrusive, and visually cohesive layout aligned with Subber’s product aesthetic"
+        ],
+        "impact": [
+          "The “Above-Video” layout introduced a scalable structure that enabled complex interactions without obstructing playback. It became the foundation for future layout decisions across the product."
+        ],
+        "images": [],
+        "tags": []
+      }
+    ]
+  }
+]

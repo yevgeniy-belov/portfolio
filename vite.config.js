@@ -9,5 +9,19 @@ export default defineConfig({
     tailwindcss(),
   ],
   base: '/portfolio/',
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Split React into its own chunk
+          'react-vendor': ['react', 'react-dom'],
+        },
+      },
+    },
+    // Enable minification
+    minify: 'esbuild',
+    // Increase chunk size warning limit (optional)
+    chunkSizeWarningLimit: 500,
+  },
 })
 
