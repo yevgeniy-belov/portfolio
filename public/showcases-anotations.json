@@ -2,6 +2,7 @@
   {
     "name": "Your company",
     "summary": {
+      "description": "Worked at Your company as Senior Product Designer.",
       "role": [
         "Senior Product Designer"
       ],
@@ -40,6 +41,7 @@
   {
     "name": "Check Point",
     "summary": {
+      "description": "Worked at Check Point as Senior Product Designer.",
       "role": [
         "Senior Product Designer"
       ],
@@ -494,6 +496,7 @@
   {
     "name": "HP Software",
     "summary": {
+      "description": "Worked at HP Software as Senior Product Designer.",
       "role": [
         "Senior Product Designer"
       ],
@@ -774,8 +777,9 @@
     ]
   },
   {
-    "name": "Subber",
+    "name": "Subber Media",
     "summary": {
+      "description": "Worked at Subber Media as Senior Product Designer.",
       "role": [
         "Senior Product Designer"
       ],
@@ -811,7 +815,7 @@
     },
     "showcases": [
       {
-        "company": "Subber",
+        "company": "Subber Media",
         "title": "Subber Logo",
         "caption": "",
         "description": "Logo design for Subber Media, an online platform that allowed users to post and share subtitles for online videos.",
@@ -838,7 +842,7 @@
         "tags": []
       },
       {
-        "company": "Subber",
+        "company": "Subber Media",
         "title": "Visit Card",
         "caption": "",
         "description": "Design of business cards for the founders of Subber Media, an early-stage platform for sharing and creating subtitles for online videos.",
@@ -864,7 +868,7 @@
         "tags": []
       },
       {
-        "company": "Subber",
+        "company": "Subber Media",
         "title": "Main layout",
         "caption": "",
         "description": "Design of the main editing layout for Subber’s video subtitle editor — defining how users interact with subtitles and video simultaneously.",
@@ -892,7 +896,7 @@
         "tags": []
       },
       {
-        "company": "Subber",
+        "company": "Subber Media",
         "title": "A Subtitle design",
         "caption": "",
         "description": "Design of the subtitle editor UI component, including all states, sizes, and interaction behaviors.",
@@ -919,7 +923,7 @@
         "tags": []
       },
       {
-        "company": "Subber",
+        "company": "Subber Media",
         "title": "Subtitles Menu",
         "caption": "",
         "description": "Design of the subtitles menu",

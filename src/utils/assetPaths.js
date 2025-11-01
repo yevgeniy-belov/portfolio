@@ -70,3 +70,12 @@ export const getProfileImagePath = (imageName) => {
   return getImagePath(`profile/${imageName}`);
 };
 
+/**
+ * Get path for a your-company page illustration image
+ * @param {string} imageName - Image filename (e.g., 'illustration-1.svg')
+ * @returns {string} Full path with base path included
+ */
+export const getYourCompanyImagePath = (imageName) => {
+  return getImagePath(`your-company/${imageName}`);
+};
+

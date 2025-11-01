@@ -1,4 +1,5 @@
 import { useState, lazy, Suspense, useEffect } from "react";
+import { Routes, Route, useNavigate, useSearchParams } from "react-router-dom";
 import MainNav from "./components/MainNav";
 import CompanySelector from "./components/CompanySelector";
 import Profile from "./components/Profile";
@@ -6,21 +7,18 @@ import Profile from "./components/Profile";
 // Lazy load Showcases page components
 const ShowcasesPage = lazy(() => import("./components/ShowcasesPage"));
 
-function App() {
-  const [currentPage, setCurrentPage] = useState("Profile");
-  const [selectedCompanyName, setSelectedCompanyName] = useState("Check Point");
+function ShowcasesRoute() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const companyParam = searchParams.get("company");
+  const [selectedCompanyName, setSelectedCompanyName] = useState(companyParam || "Check Point");
   const [showcasesData, setShowcasesData] = useState(null);
   const [loading, setLoading] = useState(false);
-  
-  // TODO: Replace with hosted URL or move to public folder
-  // Using null to prevent localhost network access requests
-  const checkPointLogo = null;
+  const navigate = useNavigate();
 
-  // Lazy load showcases data only when Showcases page is accessed
+  // Load showcases data
   useEffect(() => {
-    if (currentPage !== "Profile" && !showcasesData && !loading) {
+    if (!showcasesData && !loading) {
       setLoading(true);
-      // Fetch from public folder (not bundled)
       fetch("/portfolio/showcases-anotations.json")
         .then((res) => res.json())
         .then((data) => {
@@ -29,16 +27,37 @@ function App() {
         })
         .catch(() => setLoading(false));
     }
-  }, [currentPage, showcasesData, loading]);
+  }, [showcasesData, loading]);
 
-  // Show Profile page
-  if (currentPage === "Profile") {
-    return (
-      <div className="bg-white min-h-screen w-full">
-        <Profile onNavigate={setCurrentPage} />
-      </div>
-    );
-  }
+  // Sync URL with company selection
+  useEffect(() => {
+    if (selectedCompanyName && selectedCompanyName !== companyParam) {
+      setSearchParams({ company: selectedCompanyName }, { replace: true });
+    }
+  }, [selectedCompanyName, companyParam, setSearchParams]);
+
+  // Sync company selection with URL parameter
+  useEffect(() => {
+    if (companyParam && companyParam !== selectedCompanyName && showcasesData) {
+      const companyExists = showcasesData.find(c => c.name === companyParam);
+      if (companyExists) {
+        setSelectedCompanyName(companyParam);
+      }
+    }
+  }, [companyParam, showcasesData]);
+
+  const handleCompanySelect = (companyName) => {
+    setSelectedCompanyName(companyName);
+    setSearchParams({ company: companyName }, { replace: true });
+  };
+
+  const handleNavigate = (page) => {
+    if (page === "Profile") {
+      navigate("/");
+    } else if (page === "Showcases") {
+      navigate("/showcases");
+    }
+  };
 
   // Show loading state
   if (!showcasesData || loading) {
@@ -69,11 +88,37 @@ function App() {
         selectedCompany={selectedCompany}
         selectedCompanyName={selectedCompanyName}
         companies={companies}
-        onSelect={setSelectedCompanyName}
-        setCurrentPage={setCurrentPage}
-        checkPointLogo={checkPointLogo}
+        onSelect={handleCompanySelect}
+        setCurrentPage={handleNavigate}
       />
     </Suspense>
+  );
+}
+
+function ProfileRoute() {
+  const navigate = useNavigate();
+
+  const handleNavigate = (page) => {
+    if (page === "Profile") {
+      navigate("/");
+    } else if (page === "Showcases") {
+      navigate("/showcases");
+    }
+  };
+
+  return (
+    <div className="bg-white min-h-screen w-full">
+      <Profile onNavigate={handleNavigate} />
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<ProfileRoute />} />
+      <Route path="/showcases" element={<ShowcasesRoute />} />
+    </Routes>
   );
 }
 
