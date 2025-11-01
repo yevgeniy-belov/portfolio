@@ -53,6 +53,33 @@ This project uses Tailwind CSS v4, which features:
 - Simpler CSS imports (`@import "tailwindcss"`)
 - Improved performance and smaller bundle sizes
 
+## Assets Organization
+
+Static assets (images, icons, etc.) should be placed in the `public/assets/` directory:
+
+```
+public/
+├── assets/
+│   ├── images/     # Images (PNG, JPG, SVG, WebP, etc.)
+│   │   └── logos/   # Company logos
+│   └── icons/       # Icon files (SVG, ICO, etc.)
+```
+
+### Using Assets in Components
+
+Use the `getImagePath()` and `getIconPath()` helper functions:
+
+```jsx
+import { getImagePath, getIconPath, getLogoPath } from '../utils/assetPaths';
+
+// In your component:
+<img src={getImagePath('hero-image.png')} alt="Hero" />
+<img src={getLogoPath('checkpoint-logo.png')} alt="Check Point" />
+<img src={getIconPath('arrow.svg')} alt="Arrow" />
+```
+
+**Note:** Always include the base path `/portfolio/` when referencing assets for GitHub Pages compatibility.
+
 ## GitHub Pages Deployment
 
 This project is configured for GitHub Pages deployment. 

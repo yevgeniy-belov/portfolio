@@ -1,4 +1,5 @@
 import ShowcaseThumbnail from "./ShowcaseThumbnail";
+import { getShowcaseImagePath } from "../utils/assetPaths";
 
 const ShowcaseGrid = ({ showcases = [] }) => {
   if (!showcases || showcases.length === 0) {
@@ -23,35 +24,29 @@ const ShowcaseGrid = ({ showcases = [] }) => {
         {rows.map((row, rowIndex) => (
           <div key={rowIndex} className="flex gap-[20px] items-center w-full">
             {row.map((showcase, index) => {
-              const hasImage = showcase.images && showcase.images.length > 0;
-              const imageUrl = hasImage ? showcase.images[0] : null;
               const displayTitle = showcase.title || "Untitled";
+              // Use title-based image path (kebab-case)
+              const imageUrl = getShowcaseImagePath(displayTitle);
 
               return (
                 <div key={`${rowIndex}-${index}`} className="flex-1">
-                  {hasImage && imageUrl ? (
-                    <ShowcaseThumbnail title={displayTitle}>
-                      <div className="flex flex-col gap-[10px] items-center justify-center size-[200px]">
-                        <div className="aspect-[61/56.8116] relative w-full">
-                          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                            <img
-                              alt={displayTitle}
-                              className="absolute h-[148.36%] left-0 max-w-none top-[-19.17%] w-full"
-                              src={imageUrl}
-                            />
-                          </div>
+                  <ShowcaseThumbnail title={displayTitle}>
+                    <div className="flex flex-col gap-[10px] items-center justify-center size-[200px]">
+                      <div className="aspect-[61/56.8116] relative w-full">
+                        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                          <img
+                            alt={displayTitle}
+                            className="absolute h-[148.36%] left-0 max-w-none top-[-19.17%] w-full"
+                            src={imageUrl}
+                            onError={(e) => {
+                              // Fallback: hide image if not found
+                              e.target.style.display = 'none';
+                            }}
+                          />
                         </div>
                       </div>
-                    </ShowcaseThumbnail>
-                  ) : (
-                    <div className="bg-white h-[300px] min-h-px overflow-hidden rounded-[10px] relative">
-                      <div className="absolute backdrop-blur-[2.5px] bg-[rgba(0,0,0,0.65)] flex gap-[10px] items-start left-[10px] px-[10px] py-[5px] rounded-[4px] top-[10px]">
-                        <p className="font-medium leading-normal text-lg text-white whitespace-pre">
-                          {displayTitle}
-                        </p>
-                      </div>
                     </div>
-                  )}
+                  </ShowcaseThumbnail>
                 </div>
               );
             })}
