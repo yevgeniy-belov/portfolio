@@ -1,31 +1,23 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+import { preloadCss } from './vite.plugin.preload-css.js'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    preloadCss(),
   ],
   base: '/portfolio/',
   build: {
     rollupOptions: {
       output: {
-        manualChunks: (id) => {
+        manualChunks: {
           // Split React into its own chunk
-          if (id.includes('node_modules/react') || id.includes('node_modules/react-dom')) {
-            return 'react-vendor';
-          }
-          // Split other node_modules into vendor chunk
-          if (id.includes('node_modules')) {
-            return 'vendor';
-          }
+          'react-vendor': ['react', 'react-dom'],
         },
-        // Optimize chunk file names
-        chunkFileNames: 'assets/[name]-[hash].js',
-        entryFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash].[ext]',
       },
     },
     // Enable minification
@@ -37,8 +29,6 @@ export default defineConfig({
     cssCodeSplit: true,
     // Generate source maps only for production debugging (optional)
     sourcemap: false,
-    // Reduce chunk size
-    chunkSizeWarningLimit: 600,
   },
   // Optimize dependencies
   optimizeDeps: {
