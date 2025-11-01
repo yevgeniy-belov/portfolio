@@ -22,6 +22,15 @@ export default defineConfig({
     minify: 'esbuild',
     // Increase chunk size warning limit (optional)
     chunkSizeWarningLimit: 500,
+    // Optimize chunk sizes
+    target: 'esnext',
+    cssCodeSplit: true,
+    // Generate source maps only for production debugging (optional)
+    sourcemap: false,
+  },
+  // Optimize dependencies
+  optimizeDeps: {
+    include: ['react', 'react-dom'],
   },
 })
 

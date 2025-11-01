@@ -38,6 +38,8 @@ const ShowcaseGrid = ({ showcases = [] }) => {
                             alt={displayTitle}
                             className=""
                             src={imageUrl}
+                            loading="lazy"
+                            decoding="async"
                             onError={(e) => {
                               // Fallback: hide image if not found
                               e.target.style.display = 'none';
