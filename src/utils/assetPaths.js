@@ -3,6 +3,8 @@
  * Helper functions to construct correct asset paths for GitHub Pages
  */
 
+// Vite's base path affects public files too
+// Always use the base path for assets to work in both dev and production
 const BASE_PATH = '/portfolio';
 
 /**

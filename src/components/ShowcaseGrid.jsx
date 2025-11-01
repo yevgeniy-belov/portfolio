@@ -36,7 +36,7 @@ const ShowcaseGrid = ({ showcases = [] }) => {
                         <div className="absolute inset-0 overflow-hidden pointer-events-none">
                           <img
                             alt={displayTitle}
-                            className="absolute h-[148.36%] left-0 max-w-none top-[-19.17%] w-full"
+                            className=""
                             src={imageUrl}
                             onError={(e) => {
                               // Fallback: hide image if not found
