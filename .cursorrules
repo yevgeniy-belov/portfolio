@@ -78,6 +78,7 @@
 - Maintain proper color contrast ratios
 
 ## Git & Version Control
+- **NEVER add, commit, or push changes without explicit permission** - Always explain changes first and ask for approval before executing any git commands
 - Write clear, descriptive commit messages
 - Keep commits focused and atomic
 - Don't commit node_modules or build artifacts
