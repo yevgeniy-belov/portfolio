@@ -1,4 +1,5 @@
 import ShowcaseThumbnail from "./ShowcaseThumbnail";
+import LazyImage from "./LazyImage";
 import { getShowcaseImagePath } from "../utils/assetPaths";
 
 const ShowcaseGrid = ({ showcases = [] }) => {
@@ -34,12 +35,10 @@ const ShowcaseGrid = ({ showcases = [] }) => {
                     <div className="flex flex-col gap-[10px] items-center justify-center size-[200px]">
                       <div className="aspect-[61/56.8116] relative w-full">
                         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                          <img
+                          <LazyImage
                             alt={displayTitle}
                             className=""
                             src={imageUrl}
-                            loading="lazy"
-                            decoding="async"
                             onError={(e) => {
                               // Fallback: hide image if not found
                               e.target.style.display = 'none';
