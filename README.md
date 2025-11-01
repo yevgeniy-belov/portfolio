@@ -53,3 +53,25 @@ This project uses Tailwind CSS v4, which features:
 - Simpler CSS imports (`@import "tailwindcss"`)
 - Improved performance and smaller bundle sizes
 
+## GitHub Pages Deployment
+
+This project is configured for GitHub Pages deployment. 
+
+### Automatic Deployment
+
+The project includes a GitHub Actions workflow that automatically builds and deploys the site when you push to the `master` branch.
+
+### Manual Setup (if needed)
+
+1. Go to your repository Settings → Pages
+2. Under "Source", select "GitHub Actions"
+3. The workflow will automatically deploy your site
+
+Your site will be available at: `https://yevgeniy-belov.github.io/portfolio/`
+
+### Important Notes
+
+- The base path is set to `/portfolio/` in `vite.config.js` to match the repository name
+- If you rename the repository, update the `base` path in `vite.config.js`
+- Image URLs using `localhost` need to be updated to hosted URLs or relative paths for production
+
