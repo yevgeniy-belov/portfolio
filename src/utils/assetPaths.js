@@ -61,3 +61,12 @@ export const getShowcaseImagePath = (title, extension = 'png') => {
   return getImagePath(`showcases/${kebabTitle}.${extension}`);
 };
 
+/**
+ * Get path for a profile illustration image
+ * @param {string} imageName - Image filename (e.g., 'complexity-shape-1.svg')
+ * @returns {string} Full path with base path included
+ */
+export const getProfileImagePath = (imageName) => {
+  return getImagePath(`profile/${imageName}`);
+};
+
