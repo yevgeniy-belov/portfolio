@@ -47,6 +47,7 @@ const ShowcasesPage = ({
         <CompanySummary
           logo={companyLogo}
           companyName={selectedCompany.name}
+          companyDescription={selectedCompany.companyDescription}
           description={selectedCompany.summary?.description || `Worked at ${selectedCompany.name} as ${selectedCompany.summary.role?.[0] || "Product Designer"}.`}
         />
 

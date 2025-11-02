@@ -18,14 +18,15 @@ const ShowcaseGrid = ({ showcases = [] }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-7 container py-10">
         {showcases.map((showcase, index) => {
           const displayTitle = showcase.title || "Untitled";
-          // Use title-based image path (kebab-case)
-          const imageUrl = getShowcaseImagePath(displayTitle);
+          // Use title-based image path with company folder (kebab-case)
+          const company = showcase.company || null;
+          const imageUrl = getShowcaseImagePath(displayTitle, company);
 
           return (
             <ShowcaseThumbnail key={index} title={displayTitle}>
               <LazyImage
                 alt={displayTitle}
-                className="w-full h-full object-cover"
+                className=" h-auto object-contain w-full"
                 src={imageUrl}
                 onError={(e) => {
                   // Fallback: hide image if not found

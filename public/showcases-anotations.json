@@ -1,6 +1,7 @@
 [
   {
     "name": "Your company",
+    "companyDescription": "",
     "summary": {
       "description": "Worked at Your company as Senior Product Designer.",
       "role": [
@@ -40,6 +41,7 @@
   },
   {
     "name": "Check Point",
+    "companyDescription": "Global leader in cybersecurity solutions, protecting organizations from advanced threats worldwide.",
     "summary": {
       "description": "Worked at Check Point as Senior Product Designer.",
       "role": [
@@ -495,8 +497,9 @@
   },
   {
     "name": "HP Software",
+    "companyDescription": "Global enterprise software group (now part of OpenText) offering solutions for performance testing, monitoring, and IT management.",
     "summary": {
-      "description": "Worked at HP Software as Senior Product Designer.",
+      "description": "During my 10 years at HP as a Product Designer I had the opportunity to work on many initiatives in several products with very talented people. I created Design Systems, redesigned entire products and designed lots of product flows.",
       "role": [
         "Senior Product Designer"
       ],
@@ -778,6 +781,7 @@
   },
   {
     "name": "Subber Media",
+    "companyDescription": "An online platform that allowed users to post and share subtitles for online videos",
     "summary": {
       "description": "Worked at Subber Media as Senior Product Designer.",
       "role": [

@@ -23,7 +23,7 @@ const SummaryBox = ({ sections }) => {
   const gapClass = sections.length > 1 ? "gap-[20px]" : "gap-[10px]";
 
   return (
-    <div className={`flex-1 bg-[#f2f2f2] flex flex-col ${gapClass} items-start p-[20px] rounded-[10px] text-[14px] text-black`}>
+    <div className={`flex-1 bg-gray-100 flex flex-col ${gapClass} items-start p-[20px] text-[14px] text-black`}>
       {sections.map((section, sectionIndex) => (
         <div key={sectionIndex} className="flex flex-col gap-[10px] items-start text-[14px] text-black w-full">
           <p className="font-bold leading-normal w-full">{section.title}</p>

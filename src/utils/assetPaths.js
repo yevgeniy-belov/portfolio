@@ -51,13 +51,19 @@ export const getLogoPath = (logoPath) => {
 };
 
 /**
- * Get path for a showcase image based on title
+ * Get path for a showcase image based on title and company
  * @param {string} title - Showcase title
+ * @param {string} company - Company name (optional, for organized folder structure)
  * @param {string} extension - Image extension (default: 'png')
  * @returns {string} Full path with base path included
  */
-export const getShowcaseImagePath = (title, extension = 'png') => {
+export const getShowcaseImagePath = (title, company = null, extension = 'png') => {
   const kebabTitle = toKebabCase(title);
+  if (company) {
+    const kebabCompany = toKebabCase(company);
+    return getImagePath(`showcases/${kebabCompany}/${kebabTitle}.${extension}`);
+  }
+  // Fallback to old location for backward compatibility
   return getImagePath(`showcases/${kebabTitle}.${extension}`);
 };
 
